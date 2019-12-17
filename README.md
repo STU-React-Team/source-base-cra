@@ -1,55 +1,36 @@
-![(LITL)](./src/assets/cra-redux-boilerplate-logo.svg)
-
 # Project base
 
 The project was created using [create-react-app](https://github.com/facebook/create-react-app).
 
-# 👋 Getting started
+# 👋 Setup project
 
-Create an empty folder for you project and move to it
+create project ste[ by step
 
-```
-  mkdir my-app
-  cd my-app
-```
-
-Generate your boilerplate
+```git clone https://github.com/STU-React-Team/exercise-trannamhai.git
 
 ```
-  npx degit ChristianTracy/cra-redux-boilerplate
-```
-
-🤖 To do this in a SINGLE COMMAND use (just copy and paste into your workspace folder):
 
 ```
-mkdir my-app && cd my-app && npx degit ChristianTracy/cra-redux-boilerplate
+   cd <your_project>
 ```
 
-## 💻 Start dev server
+## 💻 Start
 
 Don't forget install your dependencies first
 
 ```
   npm install
+  or
+  yarn
 ```
 
 ```
-  npm run start
+  npm start
+  or
+  yarn start
 ```
 
 if you need change something see [create-react-app](https://github.com/facebook/create-react-app) docs.
-
-## 🏥 Testing
-
-Create your files to test with `[filename].test.js` inside your modules folders.
-
-The base config for test used by `create-react-app` was removed. This project use `jest` to test files.
-
-```
-npm test
-```
-
-This command will prompt the test results and the coverage percentage.
 
 ## 🌈 ESLint + Prettier
 
@@ -69,9 +50,6 @@ If you use VSCode, install the `eslint` and `prettier` extensions to format your
 │   ├── index.html
 │   └── manifest.json
 └── src
-    ├── locales
-    │   └── en.json
-    │   └── es.json
     ├── modules
         └── home
         │   └── Home.jsx
@@ -103,13 +81,11 @@ If you use VSCode, install the `eslint` and `prettier` extensions to format your
 - [react-router](https://www.npmjs.com/package/react-router)
 - [connected-react-router](https://github.com/supasate/connected-react-router)
 
-## UTILS
+  ## UTILS
 
-- [react-i18next](https://github.com/i18next/react-i18next)
-- [reselect](https://github.com/reduxjs/reselect)
-- [ESLint](https://eslint.org)
-- [Prettier](https://prettier.io)
-- [Airbnb Rules](https://www.npmjs.com/package/eslint-config-airbnb)
+  - [ESLint](https://eslint.org)
+  - [Prettier](https://prettier.io)
+  - [Airbnb Rules](https://www.npmjs.com/package/eslint-config-airbnb)
 
 # 👉 Redux project conventions
 
@@ -144,41 +120,6 @@ E.g: `HomeActions.js` inside `modules/home/HomeActions.js`
 Create your actions using FSA standard : https://github.com/redux-utilities/flux-standard-action
 Remember that you're using `redux-thunk` in this projects.
 
-## Selectors
-
-### - Selectors locations
-
-The reducers files should be located inside the `modules/[module_name]/` folders.
-
-
-### - Selectors tips
-
-Selector concept : https://redux.js.org/introduction/learningresources#selectors
-If you can, use `reselect` (already installed in this project).
-
-# 🔨 Utils
-
-# 🌎 i18n
-
-Define your texts inside the `locales/[language].js` files.
-The library used to manage this is `react-i18next`.
-
-## Use
-
-```
-  import { translate } from 'react-i18next';
-
-  ...
-
-  const MyComponent = ({ t }) => <span>{t('home.text')}</span>
-
-  ...
-
-  export default translate()(MyComponent)
-```
-
-You can check the complete implementation in `modules/home/Home.jsx`
-
 # 🛣️ Router
 
 See the full documentation of used router in [react-router](https://www.npmjs.com/package/react-router) and [connected-react-router](https://github.com/supasate/connected-react-router).
@@ -200,13 +141,3 @@ export const redirectExample = () => dispatch => {
     <Route render={() => <div>DEFAULT</div>} />
   </Switch>
 ```
-
-# ❓ FAQ's
-
-- Where should I put my bussines logic?
-  - The selectors are a good place to do that.
-- Should I make test for every single reducer an action?
-  - The tests are awesome. It's a good practice to test all your reducers and actions to avoid problems :)
-- I need to add a new view...
-  - In that case create a component inside a new module like `/modules/about/About.jsx`
-  - The next step will be add your new view in the `modules/commons/ViewsContaines.jsx`.
