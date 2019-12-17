@@ -6,7 +6,8 @@ The project was created using [create-react-app](https://github.com/facebook/cre
 
 create project step by step
 
-```git clone [https://github.com/STU-React-Team/exercise-trannamhai.git](https://github.com/STU-React-Team/source-base-cra.git)
+```
+    git clone [https://github.com/STU-React-Team/exercise-trannamhai.git](https://github.com/STU-React-Team/source-base-cra.git)
 ```
 
 ```
