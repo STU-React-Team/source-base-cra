@@ -7,7 +7,8 @@ The project was created using [create-react-app](https://github.com/facebook/cre
 create project step by step
 
 ```
-    git clone [STU-React-Team/source-base-cra.git](https://github.com/STU-React-Team/source-base-cra.git)
+    git clone [source-base-cra](https://github.com/STU-React-Team/source-base-cra.git).
+
 ```
 
 ```
